@@ -1,0 +1,286 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+header>img{
+  animation: imgZoom 15s;
+  z-index: 1;
+  width: 120%;
+}
+
+@keyframes imgZoom {
+  from{
+    width : 100%;
+  }
+  to{
+    width : 120%;
+    transform-origin: center;
+  }
+}
+
+.headerTabList{
+  padding : 0px;
+  margin: 0;
+  position: absolute;
+  right : 0%;
+  top : 15%;
+  width : 50%;
+  height: 12.5%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  opacity: .8;
+  animation: appearsFromRight 1.5s;
+  z-index: 100;
+}
+
+.headerTabList li{
+  width : 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerTabList li:hover a{
+  color : black;
+  transition: all .4s;
+}
+
+.headerTabList li:hover{
+  background-color: white;
+  transition: all .4s;
+}
+
+.headerTabList a{
+  text-decoration: none;
+  color : white;
+}
+
+.headerLogo{
+  position: absolute;
+  top : 32%;
+  right : 0%;
+  width : 25%;
+  height: 25%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .9;
+  overflow: hidden;
+  animation: appearsFromRight 1.5s;
+}
+
+.headerLogo img{
+  width : 150%;
+  height: auto;
+}
+
+@keyframes appearsFromRight {
+  from{
+    right : -50%;
+    opacity: 0;
+  }
+  to{
+    right : 0%;
+    opacity : ;
+  }
+}
+
+/* MAIN */
+
+.secondHeader{
+  display: none;
+}
+
+.secondHeader .headerTabList{
+  position: fixed;
+  top : 0%;
+  height: 50px;
+  width : 100%;
+}
+
+.textPresentation{
+  width : 100%;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation : opacityAppears 1.4s;
+}
+
+.textPresentation>h2{
+  text-align: center;
+  border-top: 2px solid black;
+  margin : 0px 300px;
+  padding : 50px 0px;
+}
+
+@keyframes opacityAppears {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+
+
+/* SLIDER */
+
+.sliderArrowsContainer{
+  width : 100%;
+  background-color: black;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sliderContainer{
+  width : 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: green;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderImgContainer{
+  position: absolute;
+  left : 0%;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+}
+
+.sliderImgContainer>img{
+  width : 100%;
+  height: auto;
+}
+
+.arrowContainer{
+  width : 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowContainer>div{
+  width : 80px;
+  height: 80px;
+  border-left : 1px solid white;
+  border-bottom : 1px solid white;
+  cursor: pointer;
+}
+
+.arrowLeft{
+  transform: rotate(45deg);
+}
+.arrowRight{
+  transform: rotate(-135deg);
+}
+
+/* PRESENTATION */
+
+.presentationTextImg{
+  width: 80%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin : auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.paragraphPresentation1{
+  width : 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left : -50%;
+  opacity: 0;
+}
+
+.imgContainer1{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right : -50%;
+  opacity: 0;
+}
+
+.imgContainer1 img{
+  width: 100%;
+  height: auto;
+}
+
+.paragraphPresentation2{
+  width : 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right : -50%;
+  opacity: 0;
+}
+
+.imgContainer2{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left : -50%;
+  opacity: 0;
+}
+
+.imgContainer2 img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+p{
+  font-size: 20px;
+  text-align: justify;
+  margin : 100px;
+}
+
+
+
+*{
+
+}

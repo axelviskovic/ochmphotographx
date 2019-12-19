@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title> Titre de ma page </title>
+    <meta name="description" content="description de la page"/>
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/photos.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="logoText">Photos</h1>
+      <ul class="headerTabList">
+        <li><a class="current" href="../index.html">Accueil</a></li>
+        <li><a href="photos.html">
+          Mes photos
+          <ul class="mesPhotosTabList">
+          </ul>
+        </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="headerLogo">
+        <img src="../images/logo.png">
+      </div>
+      <img src="../images/imgHeaderPhotos.jpg">
+    </header>
+    <div class="secondHeader">
+      <ul class="headerTabList">
+        <li><a class="current" href="#">Accueil</a></li>
+        <li><a href="#">
+          Mes photos
+          <ul class="mesPhotosTabList">
+          </ul>
+        </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="photosAllContainer">
+      <div class="photosCategoriesContainer">
+        <div class="selectionCategorieContainer">
+          <div id="selectionAll" class="selectionCategorie currentSelection"><h2>Tout voir</h2></div>
+          <div id="selectionEquestre" class="selectionCategorie "><h2>Equestre</h2></div>
+          <div id="selectionNature" class="selectionCategorie "><h2>Nature</h2></div>
+        </div>
+      </div>
+      <div class="categorieChoixEquestreContainer">
+        <div id="choixEquestreAll" class="categorieEquestreChoix currentChoice"><h3>Tout voir</h3></div>
+        <div id="choixConcours" class="categorieEquestreChoix"><h3>Concours</h3></div>
+        <div id="choixParticulier" class="categorieEquestreChoix"><h3>Particulier</h3></div>
+        <div id="choixBackstage" class="categorieEquestreChoix"><h3>Backstage</h3></div>
+      </div>
+      <div class="categorieChoixNatureContainer">
+        <div id="choixNatureAll" class="categorieNatureChoix currentChoice"><h3>Tout voir</h3></div>
+        <div id="choixAnimaux" class="categorieNatureChoix"><h3>Animaux</h3></div>
+        <div id="choixVoyage" class="categorieNatureChoix"><h3>Voyage</h3></div>
+        <div id="choixFauneFlore" class="categorieNatureChoix"><h3>Faune Flore</h3></div>
+      </div>
+      <div class="photosContainer">
+      </div>
+    </div>
+
+    <script src="../scripts/photos.js"></script>
+  </body>
+</html>
